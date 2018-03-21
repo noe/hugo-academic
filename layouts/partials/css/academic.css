@@ -176,11 +176,13 @@ pre {
 }
 
 hr {
-  border: 0;
-  height: 1px;
+  display:block;
+  width: 100%;
   background: #333;
   background-image: linear-gradient(to right, #ccc, #333, #ccc);
+  height: 1px;
 }
+
 
 /* Quotes */
 blockquote {
@@ -619,6 +621,15 @@ article {
   font-size: 1.75rem;
 }
 
+.article-title-simple {
+  font-size: 1.2rem;
+}
+
+.article-title-simple a {
+  color: #151515;
+  transition: color 0.6s ease;
+}
+
 .article-title a {
   color: #151515;
   transition: color 0.6s ease;
@@ -702,11 +713,16 @@ article .article-metadata {
 /*************************************************
  *  Publications
  **************************************************/
+#publications .fa-ul {
+  padding-left: 0;
+  margin-left: 2.14285714em;
+  list-style-type: none;
+}
 
 .pub-icon {
   color: rgba(0, 0, 0, 0.54);
   font-size: 0.81em;
-  padding-top: 6px;
+  padding-top: 12px;
 }
 
 .pub-banner {
@@ -733,11 +749,16 @@ article .article-metadata {
   line-height: normal;
   font-style: normal;
   font-size: 1rem;
-  color: #3170A5;
+  color: #707070;
 }
 
-.pub-list-item .pub-publication {
+.pub-list-item {
   color: #090;
+  font-size: 1rem;
+}
+
+.pub-publication {
+  color: #000080;
   font-size: 1rem;
 }
 
